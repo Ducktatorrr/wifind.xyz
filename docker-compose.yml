@@ -6,6 +6,7 @@ services:
       - "4173:4173"
     environment:
       NODE_ENV: production
+      ORIGIN: https://wifind.xyz # Set the correct origin here
     depends_on:
       - cloudflared
 

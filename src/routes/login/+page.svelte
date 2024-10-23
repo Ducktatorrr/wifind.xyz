@@ -61,7 +61,13 @@
 				</div>
 				<div class="grid gap-2">
 					<Label for="password">Password</Label>
-					<Input id="password" name="password" type="password" required />
+					<Input
+						id="password"
+						name="password"
+						type="password"
+						autocomplete="current-password"
+						required
+					/>
 				</div>
 			</Card.Content>
 			<Card.Footer class="flex flex-col items-center">

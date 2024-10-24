@@ -15,7 +15,7 @@
 			zoom: 2, // Initial zoom
 			minZoom: 2, // Minimum zoom allowed
 			maxZoom: 16, // Maximum zoom allowed
-			center: [-100, 40], // Center coordinates
+			center: [-40, 34], // Center coordinates
 		});
 
 		// Once the map is loaded, add the heatmap and point layers

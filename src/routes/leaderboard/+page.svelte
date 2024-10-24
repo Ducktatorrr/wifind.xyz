@@ -8,11 +8,7 @@
 			<Card.Title>Leaderboard</Card.Title>
 		</Card.Header>
 		<Card.Content class="flex-grow relative">
-			<iframe
-				src="http://154.3.237.106:8083/"
-				class="w-full h-full"
-				title="Leaderboard"
-			></iframe>
+			<p>Coming soon when vortal fixes me an endpoint...</p>
 		</Card.Content>
 	</Card.Root>
 </main>

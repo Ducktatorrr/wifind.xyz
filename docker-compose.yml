@@ -6,14 +6,4 @@ services:
       - "4173:4173"
     environment:
       NODE_ENV: production
-      ORIGIN: https://wifind.xyz # Set the correct origin here
-    depends_on:
-      - cloudflared
-
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    container_name: cloudflared_tunnel_wifind
-    command: tunnel --no-autoupdate run
-    restart: unless-stopped
-    environment:
-      - TUNNEL_TOKEN
+      ORIGIN: https://wifind.xyz

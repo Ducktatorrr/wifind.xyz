@@ -15,8 +15,12 @@
 	$: message = $page.url.searchParams.get("message") ?? "";
 </script>
 
-<div class="flex flex-col justify-center items-center h-[calc(100vh-150px)]">
-	<h1 class="text-4xl font-bold mb-6">WiFind.xyz</h1>
+<div class="flex flex-col justify-center items-center h-screen">
+	<h1
+		class="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-500 via-red-300 to-yellow-200 inline-block text-transparent bg-clip-text"
+	>
+		WiFind.xyz
+	</h1>
 	<Card.Root class="w-full max-w-sm">
 		<Card.Header>
 			<Card.Title class="text-2xl">Sign up</Card.Title>
@@ -26,7 +30,7 @@
 		</Card.Header>
 		<form method="POST" action="?/signup" use:enhance>
 			{#if form?.error}
-				<div class="px-6 mb-4">
+				<div class="px-6 mt-5">
 					<Alert variant="destructive">
 						<AlertDescription>
 							{form.error}
